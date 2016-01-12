@@ -12,11 +12,13 @@
 keywords: `at, in, every` (1st or last occurance...if both, say so)
 
 ```
-rmdr me to do something in 5 min
-rmdr me have something don in 10hrs
-rmdr me in can have in in it at every day
-rmdr me take out the trash every day
-rmdr me every 4th friday keep it classy
+rmdr me to have coffee @ 5 min
+rmdr me fix the app @ 7:45pm
+rmdr me something something @ every friday # will remind at default
+rmdr me create new product @ 9:00am every monday
+rmdr me something @ 10hrs.
+
+rmdir set default 1:00pm
 
 rmdr list #everything scheduled
 # id  |   title    |  when
