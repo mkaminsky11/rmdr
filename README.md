@@ -1,23 +1,30 @@
 # rmdr
 
-#### TODO
-+ 1st: parse commands
-+ register ways to remind
-  + local or remote
-  + shell (cron or something else)
-  + mail
-  + twitter message (?)
-+ send reminders to server which need mail, etc.
-
-keywords: `at, in, every` (1st or last occurance...if both, say so)
+#### One-time commands
 
 ```
-rmdr me to have coffee @ 5 min
-rmdr me fix the app @ 7:45pm
-rmdr me something something @ every friday # will remind at default
-rmdr me create new product @ 9:00am every monday
-rmdr me something @ 10hrs.
+rmdr me to do something -in 5min
+rmdr me do do something -i 5min # idential to above
+rmdr me get coffee -time 7:45 # defaults to am
+rmdr me get cofeee -t 7
+rmdr me get more coffee -t 3pm
+rmdr me finish the work -date 01/13/2016
+rmdr me finish the work -d January 13 2016
+rmdr me finish the work -d January 13
+rmdr me finish the work -d jan 13
+rmdr me visit a place -date friday -time 10:00am
 
+```
+
+#### Interval events
+
+```
+
+```
+
+#### Managing reminders
+
+```
 rmdir set default 1:00pm
 
 rmdr list #everything scheduled
