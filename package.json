@@ -1,0 +1,36 @@
+{
+  "name": "rmdr",
+  "description": "reminders in the terminal",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mkaminsky11/rmdr",
+  "author": {
+    "name": "Michael Kaminsky",
+    "email": "mkaminsky11@github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mkaminsky11/rmdr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkaminsky11/rmdr/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mkaminsky11/rmdr/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/rmdr",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+  	"crontab": "*",
+  	"shortid": "*"
+  },
+  "keywords": ["reminder", "terminal","command line"],
+  "preferGlobal": "true",
+  "bin": {
+    "rmdr" : "lib/rmdr.js"
+  }
+}
