@@ -26,7 +26,8 @@
   },
   "dependencies": {
   	"crontab": "*",
-  	"shortid": "*"
+  	"shortid": "*",
+  	"cli-table2": "*"
   },
   "keywords": ["reminder", "terminal","command line"],
   "preferGlobal": "true",

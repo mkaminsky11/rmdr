@@ -1,5 +1,20 @@
 # rmdr
 
+#### Installation
+```
+npm install -g rmdr
+```
+
+#### Todo
++ errors
++ remove by id
++ edit
++ every
+	+ `-e 5min`
+	+ `-e jan 12`
+	+ `-e friday`
+	+ `-e 12pm`
+
 #### One-time commands
 ```
 rmdr me to do something -in 5min
@@ -27,24 +42,14 @@ rmdr me visit a place -d Jan 12 -t 3		# implied 3am
 ```
 rmdr clear 	# deletes all created reminders
 
-rmdr set default 1:00pm
-
 rmdr list #everything scheduled
-# id  |   title    |  when
-# ----+------------+-------
-# 0   | something  | every day
+┌────┬─────────────────────┬─────┬────┬─────┬───┬─────┐
+│ id │ message             │ min │ h  │ dom │ m │ dow │
+├────┼─────────────────────┼─────┼────┼─────┼───┼─────┤
+│ 0  │ something           │ 12  │ 17 │ 18  │ 1 │ *   │
+├────┼─────────────────────┼─────┼────┼─────┼───┼─────┤
+│ 1  │ pick up the laundry │ 0   │ 12 │ 20  │ 1 │ *   │
+└────┴─────────────────────┴─────┴────┴─────┴───┴─────┘
 
-rmdr rm 0 # by id
-
-rmdr enabled
-# id |  service    |  data
-# ---+-------------+-------
-#  0 |  local      |       
-#  1 |  email      | some@thing.com
-#  2 |  email      | huh@wut.com
-
-rmdr disable 0
-rmdr enable 0
-rmdr remove 0
-rmdr create email new@mail.com
+rmdr remove 0 # by id
 ```
