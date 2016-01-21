@@ -1,7 +1,8 @@
 # rmdr
 
 [![npm version](https://badge.fury.io/js/rmdr.svg)](https://badge.fury.io/js/rmdr)
-Quickly make reminders in the terminal
+
+Quickly make reminders in the terminal for **Linux and OSX**. Reminders are displayed in all open user terminals using the unix `wall` command.
 
 #### Installation
 ```
@@ -13,10 +14,11 @@ npm install -g rmdr
 rmdr [me|clear|list|remove|help] [messsage] [options]
 
 rmdr me get coffee -in 10min
-rmdr me project is due -date jan 30
+rmdr me project is due -date jan 30 # same time on january 30th
 rmdr me get lunch -time 12:30
 rmdr me work out -every 7am
 rmdr me do something -every friday -time 3pm
+rmdr me do something -date tomorrow
 ```
 
 ##### Interval
