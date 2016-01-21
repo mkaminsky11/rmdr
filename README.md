@@ -2,14 +2,14 @@
 
 [![npm version](https://badge.fury.io/js/rmdr.svg)](https://badge.fury.io/js/rmdr)
 
-Quickly make reminders in the terminal for **Linux and OSX**. Reminders are displayed in all open user terminals using the unix `wall` command.
+Quickly make reminders in the terminal. Reminders are displayed in all open user terminals. For **Linux and OSX**.
 
-#### Installation
+### Installation
 ```
 npm install -g rmdr 
 ```
 
-#### Basic usage
+### Basic usage
 ```
 rmdr [me|clear|list|remove|help] [messsage] [options]
 
@@ -21,7 +21,10 @@ rmdr me do something -every friday -time 3pm
 rmdr me do something -date tomorrow
 ```
 
-##### Interval
+#### How it works
+Reminders are created using `crontab`, and the message is saved as a text file in `~/.rmdr`. The crontab job displays the contents of the file, and, if it is not a repeating reminder (such as `-every friday`) the job and the file are deleted.
+
+#### Interval
 ```
 rmdr me [messsage] -in [interval]
 rmdr me [messsage] -i [interval]
@@ -39,7 +42,7 @@ Examples:
 -i 5min
 ```
 
-##### Date
+#### Date
 ```
 rmdr me [message] -date [date]
 rmdr me [message] -d [date]
@@ -58,7 +61,7 @@ Examples:
 -d 1/12
 ```
 
-##### Time
+#### Time
 ```
 rmdr me [messsage] -time [time]
 rmdr me [messsage] -t [time]
@@ -79,7 +82,7 @@ Examples:
 -t 12:30pm
 ```
 
-##### Date and time
+#### Date and time
 ```
 rmdr me [message] -date [date] -time [time]
 rmdr me [message] -d [date] -t [time]
@@ -90,7 +93,7 @@ Examples:
 -d 01/12 -t 12:30
 ```
 
-##### Managing reminders
+#### Managing reminders
 ```
 rmdr clear 	# deletes all created reminders
 
