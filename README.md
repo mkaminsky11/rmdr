@@ -1,5 +1,8 @@
 # rmdr
 
+[![npm version](https://badge.fury.io/js/rmdr.svg)](https://badge.fury.io/js/rmdr)
+Quickly make reminders in the terminal
+
 #### Installation
 ```
 npm install -g rmdr 
@@ -7,7 +10,7 @@ npm install -g rmdr
 
 #### Basic usage
 ```
-rmdr [me|clear|list|remove] [messsage] [options]
+rmdr [me|clear|list|remove|help] [messsage] [options]
 
 rmdr me get coffee -in 10min
 rmdr me project is due -date jan 30
