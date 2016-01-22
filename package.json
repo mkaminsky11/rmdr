@@ -1,8 +1,9 @@
 {
   "name": "rmdr",
   "description": "Quickly make reminders in the terminal",
-  "version": "0.0.2",
+  "version": "0.1.6",
   "homepage": "https://github.com/mkaminsky11/rmdr",
+  "os" : [ "darwin", "linux" ],
   "author": {
     "name": "Michael Kaminsky",
     "email": "mkaminsky11@github.com"
@@ -28,5 +29,8 @@
   "preferGlobal": "true",
   "bin": {
     "rmdr" : "lib/rmdr.js"
+  },
+  "scripts": {
+    "postinstall": "rmdr init"
   }
 }

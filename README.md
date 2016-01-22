@@ -24,6 +24,16 @@ rmdr me do something -date tomorrow
 #### How it works
 Reminders are created using `crontab`, and the message is saved as a text file in `~/.rmdr`. The crontab job displays the contents of the file, and, if it is not a repeating reminder (such as `-every friday`) the job and the file are deleted.
 
+#### Custom messages and commands
+Edit `~/.rmdr/config.json`
+```
+{
+  template: "rmdr: {message}\n", //valid options are {message}, {randomid}, {once}
+  cmd: ""                      //options same as above
+}
+```
+Some examples might be setting `cmd` to `echo "created ~/.rmdr/{randomid}.txt!"` or changing the message template to `a reminder from rmdr...{message}`.
+
 #### Interval
 ```
 rmdr me [messsage] -in [interval]
