@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/rmdr.svg)](https://badge.fury.io/js/rmdr)
 
-Quickly make reminders in the terminal. Reminders are displayed in all open user terminals. For **Linux and OSX**.
+Quickly make reminders in the terminal. Reminders are displayed in all open terminals. For Linux and OSX.
 
 ### Installation
 ```
@@ -28,11 +28,11 @@ Reminders are created using `crontab`, and the message is saved as a text file i
 Edit `~/.rmdr/config.json`
 ```
 {
-  template: "rmdr: {message}\n", //valid options are {message}, {randomid}, {once}
-  cmd: ""                      //options same as above
+  template: "rmdr: {message}\n", //the output reminder message
+  cmd: ""                      	 //command run after the reminder is displayed
 }
 ```
-Some examples might be setting `cmd` to `echo "created ~/.rmdr/{randomid}.txt!"` or changing the message template to `a reminder from rmdr...{message}`.
+The following are valid placeholders: `{message} {randomid} {minute} {hour} {dom} {month} {dow}`. An example could be replacing `template` with `rmdr: {message} at time {hour}:{minute}`.
 
 #### Interval
 ```

@@ -1,7 +1,7 @@
 {
   "name": "rmdr",
   "description": "Quickly make reminders in the terminal",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "homepage": "https://github.com/mkaminsky11/rmdr",
   "os" : [ "darwin", "linux" ],
   "author": {
