@@ -23,7 +23,7 @@
   "dependencies": {
   	"crontab": "*",
   	"shortid": "*",
-  	"cli-table2": "*"
+  	"cli-table3": "*"
   },
   "keywords": ["reminder", "terminal","command line"],
   "preferGlobal": "true",
